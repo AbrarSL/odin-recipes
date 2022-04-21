@@ -69,6 +69,10 @@
   font-size: 1rem;
 }
 
+.wrong-value {
+  border-color: #f00;
+}
+
 .btn {
   padding: 0.5rem 1rem;
 
