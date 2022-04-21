@@ -4,9 +4,7 @@
   margin: 0;
   padding: 0;
 
-  height: 100vh;
-  
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Patrick Hand', cursive;
 
   background-image: url(./img/sign-in-background.jpg);
   background-attachment: fixed;
@@ -19,20 +17,49 @@
   justify-content: center;
 }
 
+.vh-set {
+  height: 100vh;
+}
+
 .content {
   flex: 1;
-
-  padding: 1rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.black-glass {
+  box-shadow: 0 0 2rem #000;
+
+  background-color: #000d;
+  color: #fafafa;
+}
+
+.search-form {
+  flex: 1;
+
+  padding: 2rem;
+  margin: 1rem;
+
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#searchBtn {
+  width: 200px;
+  margin: 0 auto;
+}
+
 .sign-in-card {
   flex: 1;
 
   padding: 2rem;
+  margin: 1rem;
 
   min-height: 400px;
   max-height: 600px;
@@ -40,9 +67,6 @@
   max-width: 400px;
 
   border-radius: 2rem;
-  box-shadow: 0 0 2rem #000;
-
-  background-color: #fafafa;
 
   display: flex;
   flex-direction: column;
@@ -50,18 +74,18 @@
   align-items: center;
 }
 
-.odin-title {
+.title {
   margin: 0;
 
-  font-family: 'Patrick Hand', sans-serif;
   font-size: 3rem;
   text-decoration: underline;
+  text-align: center;
 }
 
 .text-input {
   padding: 0.5rem 1rem;
 
-  border: 2px solid #0004;
+  border: 2px solid #00aeff;
   border-radius: 1rem;
 
   background-color: #fafafa;
@@ -79,27 +103,28 @@
   border: none;
   border-radius: 1rem;
 
-  background-color: #ddd;
+  background-color: #fafafa;
 
   font-weight: bold;
   font-size: 1rem;
 
   cursor: pointer;
+
+  transition: all 250ms;
 }
 
 .btn:hover {
-  filter: brightness(110%);
+  filter: brightness(80%);
 }
 
 .btn:active {
-  filter: saturate(200%);
   transform: scale(95%);
 }
 
 .suggested {
   background-color: #00aeff;
 
-  color: #fff;
+  color: #fafafa;
 }
 
 .sign-in-form {
@@ -111,11 +136,57 @@
   gap: 0.5rem;
 }
 
+.recipe-container {
+  flex: 1;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.recipe-card {
+  padding: 1rem;
+
+  border-radius: 2rem;
+
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-title {
+  margin: 0;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.recipe-img {
+  width: 90%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 2rem;
+  border: 2px solid #fafafa;
+}
+
 .footer {
   padding: 0.5rem;
 
-  background-color: #fafafa;
-  opacity: 75%;
+  box-shadow: 0 0 2rem #000;
+
+  background-color: #000d;
+  color: #fafafa;
 
   display: flex;
   justify-content: center;
