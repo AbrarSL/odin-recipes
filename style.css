@@ -88,9 +88,12 @@
 }
 
 .btn:hover {
-  filter: brightness(105%);
+  filter: brightness(110%);
+}
 
-  transform: scale(102%);
+.btn:active {
+  filter: saturate(200%);
+  transform: scale(95%);
 }
 
 .suggested {
